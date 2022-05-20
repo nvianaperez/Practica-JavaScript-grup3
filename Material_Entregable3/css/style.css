@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    
+}
+​
+
+#cap {
+    background-image:url("../img/header-mini.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 200px;
+}
+​
+#captext {
+    text-align: center;
+    font-size: 2em;
+    
+}
+​
+#emailus {
+    background-image: url(mapita.jpg);
+}
+
+@media (min-width: 1280px) {
+    #cap {
+    background-image:url("../img/header.jpg");
+ }
+}
