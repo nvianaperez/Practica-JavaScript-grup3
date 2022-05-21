@@ -24,6 +24,17 @@
     text-align: left;
 }
 
+.location-text {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+#emailus {
+    background-image: url(mapita.jpg);
+}
+
+
+
 
 @media (min-width: 375px) and (max-width: 800px) {
  .tumbado {
@@ -33,6 +44,3 @@
 
 
 ​
-#emailus {
-    background-image: url(mapita.jpg);
-}
