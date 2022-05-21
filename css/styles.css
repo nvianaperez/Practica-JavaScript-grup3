@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tumbado {
+    background-image: url(../img/header.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+.tumbado h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: left;
+}
+.navbar-violet {
+    background-color:violet;
+}
+.navbar-violet ul li a {
+    color: whitesmoke;
+
+}
+
+@media (min-width: 375px) and (max-width: 800px) {
+ .tumbado {
+ background-image: url(../img/9.jpg);
+ }
+ }
+
