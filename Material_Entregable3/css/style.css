@@ -4,26 +4,35 @@
 }
 ​
 
-#cap {
-    background-image:url("../img/header-mini.png");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tumbado {
+    background-image: url(../img/header.jpg);
+    height: 500px;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-size:cover;
-    padding: 200px;
+    margin-top: 0px;
+    padding-top: 50px;
 }
-​
-#captext {
-    text-align: center;
-    font-size: 2em;
-    
+.tumbado h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: left;
 }
+
+
+@media (min-width: 375px) and (max-width: 800px) {
+ .tumbado {
+ background-image: url(../img/header-mini.png);
+ }
+ }
+
+
 ​
 #emailus {
     background-image: url(mapita.jpg);
-}
-
-@media (min-width: 1280px) {
-    #cap {
-    background-image:url("../img/header.jpg");
- }
 }
