@@ -24,6 +24,22 @@
     text-align: left;
 }
 
+.rotate{
+    transition: 1s;
+}
+.rotate:hover {
+    transform: rotate(30deg);
+}
+.flex-container img:nth-child(5):hover {
+    border-radius: 100px;
+    animation-name: rota;
+    animation-duration: 4s;
+} 
+@keyframes rota {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
 .location-text {
     text-align: left;
     margin-left: 2rem;
