@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    
+}
+​
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tumbado {
+    background-image: url(../img/header.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+.tumbado h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.rotate{
+    transition: 1s;
+}
+.rotate:hover {
+    transform: rotate(30deg);
+}
+.flex-container img:nth-child(5):hover {
+    border-radius: 100px;
+    animation-name: rota;
+    animation-duration: 4s;
+} 
+@keyframes rota {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.location-text {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+#emailus {
+    background-image: url(mapita.jpg);
+}
+
+
+
+
+@media (min-width: 375px) and (max-width: 800px) {
+ .tumbado {
+ background-image: url(../img/header-mini.png);
+ }
+ }
+
+
+​
