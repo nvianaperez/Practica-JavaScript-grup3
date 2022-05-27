@@ -52,12 +52,12 @@
 
 /*leon css*/
 /* .location-container {
-display: block;
-padding-left: 20%;
-padding-right: 20%;
-text-align: center;
-
-} */
+  display: block;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  
+  } */
 
 .location-container > p {
   color: grey;
@@ -74,11 +74,11 @@ text-align: center;
   /* text-align: left; */
 }
 /* .info-container p {
-  margin-left: 30%;
-}
-.info-container-h3 {
-  margin-left: 30% !important;
-} */
+    margin-left: 30%;
+  }
+  .info-container-h3 {
+    margin-left: 30% !important;
+  } */
 .info-container {
   display: inline-block;
   text-align: left;
