@@ -49,13 +49,106 @@
     background-image: url(mapita.jpg);
 }
 
+/*leon css*/
+/* .location-container {
+display: block;
+padding-left: 20%;
+padding-right: 20%;
+text-align: center;
 
+} */
+
+.location-container> p {
+color: grey;
+}
+.map-container {
+/* display: inline-block; */
+border-radius: 360px;
+width: 300px;
+height: 300px;
+background-color: aquamarine;
+/* margin-right: 10px; */
+/* text-align: left; */
+}
+.info-container p {
+margin: 0;
+}
+.info-container {
+display: inline-block;
+text-align: left;
+
+}
+.info-container div:first-child {
+margin-bottom: 25%;
+}
+.map-container{
+margin: 2%;
+}
+
+/*josep part*/
+.services{
+    margin-bottom: 30px;
+}
+.services h2{
+    text-align: center;
+    margin: 2.5% 0%;
+}
+section{
+    font-family: Open, sans-serif;
+}
+.img-container {
+    width: 90px;
+    height: 90px;
+    border: 3px grey solid;
+    border-radius: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-items {
+    display: flex;
+    justify-content: space-around
+}
+.img-container img{
+    width: 50px;
+    height:50px;
+    filter: invert(29%) sepia(14%) saturate(2627%) hue-rotate(222deg) brightness(92%) contrast(81%);
+}
+.service-info {
+    width: 65%;
+}
+.service-info > p {
+    font-size: small;
+    color: grey;
+}
+.services-container {
+    padding: 0 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.img-container {
+    transition: background-color 2s ease-out;
+    margin-top: 5%;
+}
+.img-container:hover {
+    background-color: purple;
+    
+}
+.img-container img:hover {
+    filter:invert(100%);
+}
+
+@media (min-width: 1280px) {
+    #cap {
+    background-image:url("../img/header.jpg");
 
 
 @media (min-width: 375px) and (max-width: 800px) {
  .tumbado {
  background-image: url(../img/header-mini.png);
  }
+
  }
 
 
