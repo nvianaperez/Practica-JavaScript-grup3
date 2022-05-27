@@ -6,6 +6,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.nav-item:hover {
+  border-radius: 5px;
+  background-color: white;
+}
+.nav-link:hover {
+  color: #6e109d !important;
+}
 .tumbado {
   background-image: url(../img/header.jpg);
   height: 500px;
