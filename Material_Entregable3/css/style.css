@@ -147,13 +147,17 @@ section {
 }
 
 @media (min-width: 1280px) {
-  #cap {
-    background-image: url('../img/header.jpg');
-  }
+
+    #cap {
+    background-image:url("../img/header.jpg");
+    }
 }
 
 @media (min-width: 375px) and (max-width: 800px) {
-  .tumbado {
-    background-image: url(../img/header-mini.png);
-  }
-}
+ .tumbado {
+ background-image: url(../img/header-mini.png);
+ }
+ }
+
+
+  
