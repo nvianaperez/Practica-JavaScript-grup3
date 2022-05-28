@@ -93,8 +93,7 @@ p {
 .info-container {
   display: inline-block;
   text-align: left;
-  margin-left: 10%;
-  margin-top: 2%;
+  max-width: 20vw;
 }
 .info-container div:first-child {
   margin-bottom: 25%;
@@ -157,6 +156,10 @@ section {
   filter: invert(100%);
 }
 
+#amazon-add {
+  padding-left: 20px;
+}
+
 @media (min-width: 1280px) {
   #cap {
     background-image: url('../img/header.jpg');
@@ -166,5 +169,10 @@ section {
 @media (min-width: 375px) and (max-width: 800px) {
   .tumbado {
     background-image: url(../img/header-mini.png);
+  }
+}
+@media (max-width: 575px) {
+  #amazon-add {
+    display: none;
   }
 }
