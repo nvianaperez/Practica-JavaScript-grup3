@@ -171,7 +171,7 @@ section {
     background-image: url(../img/header-mini.png);
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 830px) {
   #amazon-add {
     display: none;
   }
