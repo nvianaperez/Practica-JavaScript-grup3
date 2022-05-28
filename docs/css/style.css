@@ -6,6 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+p {
+  text-align: justify;
+}
 
 .nav-item:hover {
   border-radius: 5px;
