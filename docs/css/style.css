@@ -55,8 +55,7 @@
 }
 
 #emailus {
-
-   background-image: url(../img/mapita.jpg)
+  background-image: url(../img/mapita.jpg);
 }
 
 /*leon css*/
@@ -74,8 +73,8 @@
 .map-container {
   /* display: inline-block; */
   border-radius: 100%;
-  width: 70vw;
-  height: 70vw;
+  width: 50vw;
+  height: 50vw;
   max-width: 600px;
   max-height: 600px;
   background-color: aquamarine;
@@ -91,7 +90,7 @@
 .info-container {
   display: inline-block;
   text-align: left;
-  margin-left: 20%;
+  margin-left: 10%;
   margin-top: 2%;
 }
 .info-container div:first-child {
@@ -156,17 +155,13 @@ section {
 }
 
 @media (min-width: 1280px) {
-
-    #cap {
-    background-image:url("../img/header.jpg");
-    }
+  #cap {
+    background-image: url('../img/header.jpg');
+  }
 }
 
 @media (min-width: 375px) and (max-width: 800px) {
- .tumbado {
- background-image: url(../img/header-mini.png);
- }
- }
-
-
-  
+  .tumbado {
+    background-image: url(../img/header-mini.png);
+  }
+}
