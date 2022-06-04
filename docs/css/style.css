@@ -76,33 +76,18 @@ p {
 
 /*leon css*/
 .location-container {
-  /* display: block;
-  padding-left: 20%;
-  padding-right: 20%;
-  text-align: center; */
+
   box-sizing: border-box;
-  /* max-width: 30vw; */
 }
-/* .chid-1 {
-  max-width: 100%;
-}
-.location-container > p {
-  color: grey;
-  max-width: 100%;
-}
-em {
-  max-width: 100%;
-} */
+
 .map-container {
-  /* display: inline-block; */
   border-radius: 100%;
   width: 50vw;
   height: 50vw;
   max-width: 600px;
   max-height: 600px;
   background-color: aquamarine;
-  /* margin-right: 10px; */
-  /* text-align: left; */
+  
 }
 /* .info-container p {
     margin-left: 30%;
@@ -124,7 +109,7 @@ em {
 }
 
 /*josep part*/
-.services {
+/* .services {
   margin-bottom: 30px;
 }
 .services h2 {
@@ -133,7 +118,7 @@ em {
 }
 section {
   font-family: Open, sans-serif;
-}
+} */
 .img-container {
   width: 90px;
   height: 90px;

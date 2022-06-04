@@ -28,9 +28,8 @@
 <body class="container-fluid">
     <header>
       <div class="tumbado pt-5">
-        <div class="container">
-          <h1 class="text-start">My Business Page</h1>
-        </div>
+          <h1 class="w-100 m-2 container">My Business Page</h1>
+        
       </div>
         <!-- Navbar -->
 
@@ -79,15 +78,16 @@
             <h2 class="text-center">Who we are? </h2>
             <p class="text-secondary mx-auto w-50">We are a group of students Lorem ipsum dolor sit amet, cibo sensibus interesset no sit. Et dolor possim volutpat qui. No malis tollit iriure eam.</p>     
               <!-- mx-auto( margin left and right auto, w:width) -->
-          </div>
         </div>
+      
+      
 
-        <div class="row ms-5 me-5 pe-5 ps-5 ">
+        <div class="container mx-auto row">
           <div class="col-sm-6 ">
             <h6>Columna 1</h6>
-            <img src="./img/1.jpg" title="Muñeco de caja volando en cohete alt="muñeco de caja volando en cohete" class="img-fluid float-start me-2"></img>
+            <img src="./img/1.jpg" title="Muñeco de caja volando en cohete" alt="muñeco de caja volando en cohete" class="img-fluid float-start me-2"></img>
           <p>Lorem ipsum dolor sit amet, cibo sensibus interesset no sit.cibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sit Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel.</p>
-        </div>
+          </div>
           <div class="col-sm-6">
           <h6> Columna 2.1</h6>
           <img src="./img/ad.jpg" title="Anuncio de amazon" alt="anuncio de amazon" class="img-fluid float-end ms-2 "></img>
@@ -100,8 +100,8 @@
       </div>
       
       <!-- Our Services  -->
-      <section id="services" class="services pe-5 ps-5 ">
-        <h2>Our Services</h2>
+      <section id="services" class="services container mx-auto pb-5">
+        <h2 class="text-center mb-5">Our Services</h2>
         <div  class="row">
           <article class="services-items col-md-6 col-lg-4">
             
@@ -168,7 +168,7 @@
       <!-- Portfolio -->
     <section>
     <div id="portafolio" class="container-fluid bg-light pt-4 mb-2  pe-5 ps-5">
-      <h4 class=" text-center">Portfolio</h4>
+      <h2 class=" text-center">Portfolio</h2>
       <p class="text-center text-darkgit">There are success projects created by us</p>
       <div class="flex-container row m-2">    <!-- m-2(margin) -->  
           <img class="rotate img-fluid col-md-6 col-xl-4 p-2" src="./img/10.jpg"  title="Muñeco de caja duchandose" alt="muñeco de caja duchandose" width="300" height="200">
@@ -202,7 +202,7 @@
      initMap(position)
      })
     </script>
-    <section id="location" class="location-container container d-flex flex-column align-items-center  col-8 col-md-8   pe-5 ps-5 ">
+    <section id="location" class="location-container container d-flex flex-column align-items-center  col-8 col-md-8 p-5 ">
       <div class="row me-md-5 ">
         <div class="col-12">
           <h1> Contact</h1>
@@ -211,17 +211,17 @@
       </div>
 
         <div class="row-cols-12 d-flex flex-column  d-md-flex flex-md-row row-   justify-content-start align-items-start ">
-          <div id="map" class="map-container  col-12  "> 
+          <div id="map" class="map-container  col-12 col-md-8 "> 
 
           </div>
-          <div class="info-container  col-12 col-md-12   ">
-            <div class="container-fluid m-auto mt-2 ps-md-5">
+          <div class="info-container  col-12 col-md-4 ">
+            <div class="container-fluid m-auto mt-2">
                 <h3 class="info-container-h3"> Head Office </h3>
                 <p class="col-12"> <em> 12356 Blank street</em></p>
                 <p class="col-12"> <em>Phone <a href="tel:+2456134321" target="_blank" rel="noreferrer">2456-134-321</a> </em></p>
                 <p class="col-12"> <em>Email Address: <br> <a href="mailto:info@domain.com" target="_blank" rel="noreferrer">info@domain.com</a> </em></p>
             </div>
-            <div  class="container-fluid m-auto ps-md-5">
+            <div  class="container-fluid m-auto">
                 <h3 class="info-container-h3"> Emea </h3>
                 <p class="col-12"> <em> Carrer de Sant Joan de la <br> Salle, 42</em></p>
                 <p class="col-12"> <em> 08022 Barcelona</em></p>
@@ -241,8 +241,8 @@
   <div id="emailus" class="w-100">
   <div class="container pt-4">
     <h2 class=" text-center text-white ">Email us</h2>
-  <div class="form d-flex flex-column align-items-center pl-5">
-
+  <form class="form d-flex flex-column align-items-center pl-5">
+  
   <div class="form-group  col-lg-6 col-md-8 col-sm-12 col-12 ">
     <label for="inputName" class="col-sm-2 col-form-label text-white">Name*</label>
     <input type="Name" class="form-control" id="inputName" name="inputName" placeholder="Name">
@@ -269,15 +269,15 @@
   </div>
   
   <div class="form-group col-lg-6 col-md-8 col-sm-12 mb-5">   <!--  d-flex justify-content-centerchange the alignment of flex items -->
-    <button type="submit" class="btn bg-light mb-2 col-lg-6 col-md-8 col-sm-12 mt-2 mb-2">Send</button>
+    <button type="submit" id='submitFormBtn' class="btn bg-light mb-2 col-lg-6 col-md-8 col-sm-12 mt-2 mb-2">Send</button>
   </div>  
 
+</form>
 </div>
 </div>
-</div>
-<div class="container-fluid text-white text-end p-1" style="background-color: #6e109d">
-  <p> <small>© 2016 - <a href="https://www.salleurl.edu/en" target="blank" class="link-light">La Salle</a>. All Rights Reserved. </small></p>
-</div>
+  <div class="container-fluid text-white text-end p-1" style="background-color: #6e109d">
+    <p> <small>© 2016 - <a href="https://www.salleurl.edu/en" target="blank" class="link-light">La Salle</a>. All Rights Reserved. </small></p>
+  </div>
 
 </footer>
 <script async defer
@@ -289,5 +289,6 @@
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap">
 </script>
+<script src="./app.js" type="text/javascript"></script>
   </body>
 </html>
