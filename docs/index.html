@@ -27,9 +27,9 @@
 </head>
 <body class="container-fluid">
     <header>
-      <div class="tumbado">
+      <div class="tumbado pt-5">
         <div class="container">
-          <h1>My Business Page</h1>
+          <h1 class="text-start">My Business Page</h1>
         </div>
       </div>
         <!-- Navbar -->
@@ -67,11 +67,13 @@
       
         
     </header>
-    <body>
+ 
+
+
 
       <!-- Who we are -->
 
-      <div class="container-fluid  bg-light pt-4">
+      <div class="row-cols-12 w-100  bg-light my-1 pt-4 ">
 
         <div id="whoweare" class="row p-1 ">
             <h2 class="text-center">Who we are? </h2>
@@ -80,15 +82,15 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-6">
+        <div class="row ms-5 me-5 pe-5 ps-5 ">
+          <div class="col-sm-6 ">
             <h6>Columna 1</h6>
-            <img src="./img/1.jpg" title="Muñeco de caja volando en cohete alt="muñeco de caja volando en cohete" class="img-fluid float-start"></img>
+            <img src="./img/1.jpg" title="Muñeco de caja volando en cohete alt="muñeco de caja volando en cohete" class="img-fluid float-start me-2"></img>
           <p>Lorem ipsum dolor sit amet, cibo sensibus interesset no sit.cibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sitcibo sensibus interesset no sit Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel.</p>
         </div>
           <div class="col-sm-6">
           <h6> Columna 2.1</h6>
-          <img src="./img/ad.jpg" title="Anuncio de amazon" alt="anuncio de amazon" class="img-fluid float-end"></img>
+          <img src="./img/ad.jpg" title="Anuncio de amazon" alt="anuncio de amazon" class="img-fluid float-end ms-2 "></img>
           <p>Lorem ipsum dolor sit amet, cibo sensibus interesset no sit. Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel</p>
           
           <h6> Columna 2.2</h6>
@@ -98,7 +100,7 @@
       </div>
       
       <!-- Our Services  -->
-      <section id="services" class="services ">
+      <section id="services" class="services pe-5 ps-5 ">
         <h2>Our Services</h2>
         <div  class="row">
           <article class="services-items col-md-6 col-lg-4">
@@ -164,7 +166,8 @@
       </div>
     </section>
       <!-- Portfolio -->
-    <div id="portafolio" class="container-fluid bg-light pt-4 mb-2">
+    <section>
+    <div id="portafolio" class="container-fluid bg-light pt-4 mb-2  pe-5 ps-5">
       <h4 class=" text-center">Portfolio</h4>
       <p class="text-center text-darkgit">There are success projects created by us</p>
       <div class="flex-container row m-2">    <!-- m-2(margin) -->  
@@ -178,6 +181,7 @@
           <img class="rotate img-fluid col-md-6 col-xl-4 p-2" src="./img/8.jpg"   title="Muñeco metido en una caja en un entorno rosa" alt="muñeco metido en una caja en un entorno rosa" width="300" height="200">
           <img class="rotate img-fluid col-md-6 col-xl-4 p-2" src="./img/9.jpg"   title="Muñeco de caja adulto y muñeco de caja niño con galletas con birutas" alt="muñeco de caja adulto y muñeco de caja niño con galletas con birutas" width="300" height="200">
       </div>
+    </div>
     </section>
     <!-- Location  -->
     <!-- no mover este script-->
@@ -198,31 +202,31 @@
      initMap(position)
      })
     </script>
-    <section id="location" class="location-container container d-flex flex-column align-items-center mr-2  ">
-      <div class="row m-2">
+    <section id="location" class="location-container container d-flex flex-column align-items-center  col-8 col-md-8   pe-5 ps-5 ">
+      <div class="row me-md-5 ">
         <div class="col-12">
           <h1> Contact</h1>
           <p> You can find us</p>
         </div>
       </div>
 
-        <div class="row-cols-12 d-flex flex-column  d-md-flex flex-md-row row- m-2  justify-content-between ">
-          <div id="map" class="map-container  col-6  col-md-4 "> 
+        <div class="row-cols-12 d-flex flex-column  d-md-flex flex-md-row row-   justify-content-start align-items-start ">
+          <div id="map" class="map-container  col-12  "> 
 
           </div>
-          <div class="info-container  col-6 col-md-6  ">
-            <div class="">
+          <div class="info-container  col-12 col-md-12   ">
+            <div class="container-fluid m-auto mt-2 ps-md-5">
                 <h3 class="info-container-h3"> Head Office </h3>
-                <p> <em> 12356 Blank street</em></p>
-                <p> <em>Phone <a href="tel:+2456134321" target="_blank" rel="noreferrer">2456-134-321</a> </em></p>
-                <p> <em>Email Address: <br> <a href="mailto:info@domain.com" target="_blank" rel="noreferrer">info@domain.com</a> </em></p>
+                <p class="col-12"> <em> 12356 Blank street</em></p>
+                <p class="col-12"> <em>Phone <a href="tel:+2456134321" target="_blank" rel="noreferrer">2456-134-321</a> </em></p>
+                <p class="col-12"> <em>Email Address: <br> <a href="mailto:info@domain.com" target="_blank" rel="noreferrer">info@domain.com</a> </em></p>
             </div>
-            <div>
+            <div  class="container-fluid m-auto ps-md-5">
                 <h3 class="info-container-h3"> Emea </h3>
-                <p> <em> Carrer de Sant Joan de la <br> Salle, 42</em></p>
-                <p> <em> 08022 Barcelona</em></p>
-                <p> <em>Phone: <a href="tel:+34932902474" target="_blank" rel="noreferrer">932 90 24 74</a> </em></p>
-                <p> <em>Email Address: <br> <a href="mailto:info@salle.url.edu" target="_blank" rel="noreferrer">info@salle.url.edu </a> </em></p>
+                <p class="col-12"> <em> Carrer de Sant Joan de la <br> Salle, 42</em></p>
+                <p class="col-12"> <em> 08022 Barcelona</em></p>
+                <p class="col-12"> <em>Phone: <a href="tel:+34932902474" target="_blank" rel="noreferrer">932 90 24 74</a> </em></p>
+                <p class="col-12"> <em>Email Address: <br> <a href="mailto:info@salle.url.edu" target="_blank" rel="noreferrer">info@salle.url.edu </a> </em></p>
             </div>
         
         </div>
@@ -231,35 +235,35 @@
       
     
   </section>
-      
-  <footer>
+
+  <footer class="container-fluid row-cols-12 w-100">
     <!-- EmailUs -->
-  <div id="emailus">
+  <div id="emailus" class="w-100">
   <div class="container pt-4">
     <h2 class=" text-center text-white ">Email us</h2>
   <div class="form d-flex flex-column align-items-center pl-5">
 
-  <div class="form-group  col-lg-6 col-md-8 col-sm-12 ">
+  <div class="form-group  col-lg-6 col-md-8 col-sm-12 col-12 ">
     <label for="inputName" class="col-sm-2 col-form-label text-white">Name*</label>
     <input type="Name" class="form-control" id="inputName" name="inputName" placeholder="Name">
   </div>
 
-  <div class="form-group  col-lg-6 col-md-8 col-sm-12">
+  <div class="form-group  col-lg-6 col-md-8 col-sm-12 col-12">
     <label for="inputEmail" class="col-sm-2 col-form-label text-white">Email*</label>
     <input type="Email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email">
   </div>
 
-  <div class="form-group  col-lg-6 col-md-8 col-sm-12">
+  <div class="form-group  col-lg-6 col-md-8 col-sm-12 col-12">
     <label for="inputPhone" class="col-sm-2 col-form-label text-white">Tel</label>
     <input type="phone" class="form-control" id="inputPhone" name="inputPhone" placeholder="Phone">
   </div>
   
-  <div class="form-group  col-lg-6 col-md-8 col-sm-12">
+  <div class="form-group  col-lg-6 col-md-8 col-sm-12 col-12">
     <label for="inputSubject" class="col-sm-2 col-form-label text-white">Subject*</label>
       <input type="Subject" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject">
   </div>
 
-  <div class="form-group  col-lg-6 col-md-8 col-sm-12">
+  <div class="form-group  col-lg-6 col-md-8 col-sm-12 col-12">
     <label for="inputComment" class="col-sm-2 col-form-label text-white">Comment*</label> 
       <textarea class="form-control  col-lg-6 col-md-8 col-sm-12 mt-2 mb-2" rows="3" id="inputComment" name="inputComment" placeholder="Comment"></textarea>
   </div>
