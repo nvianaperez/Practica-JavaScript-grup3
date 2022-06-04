@@ -1,5 +1,5 @@
 const body = document.body;
-const handleSubmit = document.getElementById('submitFormBtn');
+const handleSubmit = document.getElementById('submitForm');
 
 handleSubmit.addEventListener('click', (e) => {
     e.preventDefault();
