@@ -1,5 +1,5 @@
 
-​ * {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,21 +22,19 @@ p {
   background-size: cover;
   background-position: center;
   margin-top: 0px;
-  padding-top: 50px;
 }
 .tumbado h1 {
   color: white;
   font-size: 3rem;
-  text-align: left;
 }
 
 .rotate {
-  transition: 1s;
+  transition: 1.5s;
 }
 .rotate:hover {
   transform: rotate(30deg);
 }
-.flex-container img:nth-child(5):hover {
+/* .flex-container img:nth-child(5):hover {
   border-radius: 100px;
   animation-name: rota;
   animation-duration: 4s;
@@ -48,7 +46,25 @@ p {
   to {
     transform: rotate(360deg);
   }
+} */
+
+.flex-container img:nth-child(5) {
+  animation-duration: 4s;
 }
+.flex-container img:nth-child(5):hover {
+  border-radius: 100px;
+  cursor: default;
+  transform: rotate(360deg);
+  animation-duration: 4s;
+}
+/* @keyframes rotaBack {
+  from {
+    transform: rotate();
+  }
+  to {
+    transform: rotate(0deg);
+  }
+} */
 
 .location-text {
   text-align: left;
@@ -60,27 +76,19 @@ p {
 }
 
 /*leon css*/
-/* .location-container {
-  display: block;
-  padding-left: 20%;
-  padding-right: 20%;
-  text-align: center;
-  
-  } */
+.location-container {
 
-.location-container > p {
-  color: grey;
+  box-sizing: border-box;
 }
+
 .map-container {
-  /* display: inline-block; */
   border-radius: 100%;
   width: 50vw;
   height: 50vw;
   max-width: 600px;
   max-height: 600px;
   background-color: aquamarine;
-  /* margin-right: 10px; */
-  /* text-align: left; */
+  
 }
 /* .info-container p {
     margin-left: 30%;
@@ -97,20 +105,11 @@ p {
   margin-bottom: 25%;
 }
 .map-container {
-  margin: 2%;
+  /* margin: 2%; */
 }
 
-/*josep part*/
-.services {
-  margin-bottom: 30px;
-}
-.services h2 {
-  text-align: center;
-  margin: 2.5% 0%;
-}
-section {
-  font-family: Open, sans-serif;
-}
+family: Open, sans-serif;
+} */
 .img-container {
   width: 90px;
   height: 90px;
