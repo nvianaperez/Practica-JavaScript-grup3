@@ -1,4 +1,5 @@
-​ * {
+
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -107,16 +108,7 @@ p {
   /* margin: 2%; */
 }
 
-/*josep part*/
-/* .services {
-  margin-bottom: 30px;
-}
-.services h2 {
-  text-align: center;
-  margin: 2.5% 0%;
-}
-section {
-  font-family: Open, sans-serif;
+family: Open, sans-serif;
 } */
 .img-container {
   width: 90px;
