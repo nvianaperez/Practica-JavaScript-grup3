@@ -1,3 +1,5 @@
+import { menuWithKeys } from './menuWithKeys';
+import { changePositions } from './changePosition';
 // const body = document.body;
 // const handleSubmit = document.getElementById('submitForm');
 
@@ -40,33 +42,30 @@
  * AGUSTIN
  *
  */
-const menuWithKeys = () => {
-  const menu = document.getElementById('menu');
-  const arrayOfSection = menu.getElementsByClassName('nav-link');
-  Array.from(arrayOfSection).forEach((element, i) => {
-    document.addEventListener('keyup', (event) => {
-      if (Number(event.key - 1) === i) {
-        element.click();
-      }
-    });
-  });
-};
+// const menuWithKeys = () => {
+//   const menu = document.getElementById('menu');
+//   const arrayOfSection = menu.getElementsByClassName('nav-link');
+//   Array.from(arrayOfSection).forEach((element, i) => {
+//     document.addEventListener('keyup', (event) => {
+//       if (Number(event.key - 1) === i) {
+//         element.click();
+//       }
+//     });
+//   });
+// };
 
-const changePositions = () => {
-  const arrayOfImgs = [...document.getElementsByClassName('imgs')];
-  const randomNumber = Math.floor(Math.random() * 9);
-  const randomNumber2 = Math.floor(Math.random() * 9);
-  arrayOfImgs[randomNumber].after(arrayOfImgs[randomNumber2]);
-};
+// const changePositions = () => {
+//   const arrayOfImgs = [...document.getElementsByClassName('imgs')];
+//   const randomNumber = Math.floor(Math.random() * 9);
+//   const randomNumber2 = Math.floor(Math.random() * 9);
+//   arrayOfImgs[randomNumber].after(arrayOfImgs[randomNumber2]);
+// };
+// menuWithKeys();
+// setInterval(() => {
+//   changePositions();
+// }, 2000);
+
 menuWithKeys();
 setInterval(() => {
   changePositions();
 }, 2000);
-
-/*
- _______________________________________|___________________________________________
-|____________________________________---*---________________________________________|
-|_______________________________________|___________________________________________|
-|_______________________________________|___________________________________________|
-
-*/
