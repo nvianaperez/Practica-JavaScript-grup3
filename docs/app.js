@@ -1,40 +1,47 @@
-const body = document.body;
-const handleSubmit = document.getElementById('submitForm');
+import "./Modulos/alertFecha.js";
+// import "./Modulos/menuWithKeys.js";
 
-handleSubmit.addEventListener('click', (e) => {
-    e.preventDefault();
-    let modal = document.createElement('div', 'succesSubscription');
-    modal.style.width = '100vw';
-    modal.style.height = '100vh';
-    modal.style.backgroundColor = 'rgb(54 36 63 / 90%)';
-    modal.style.zIndex = 2000;
-    modal.style.position = 'absolute';
-    modal.style.top = '353vh';
-    modal.style.left = '0'
-    modal.style.display = 'flex'
-    modal.style.alignItems = 'center';
-    modal.style.justifyContent = 'center';
+// const body = document.body;
+// const handleSubmit = document.getElementById('submitForm');
 
-    let textContainer = document.createElement('div');
-    textContainer.style.width = '50%';
-    textContainer.style.height = '20%';
-    textContainer.style.fontSize = '52px';
-    textContainer.style.fontWeight = 'bold';
-    textContainer.style.textAlign = 'center'
-    textContainer.style.color = 'yellow';
-    textContainer.innerText = 'Checking email validation';
+// handleSubmit.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     let modal = document.createElement('div', 'succesSubscription');
+//     modal.style.width = '100vw';
+//     modal.style.height = '100vh';
+//     modal.style.backgroundColor = 'rgb(54 36 63 / 90%)';
+//     modal.style.zIndex = 2000;
+//     modal.style.position = 'absolute';
+//     modal.style.top = '353vh';
+//     modal.style.left = '0'
+//     modal.style.display = 'flex'
+//     modal.style.alignItems = 'center';
+//     modal.style.justifyContent = 'center';
 
-    modal.appendChild(textContainer)
-    setTimeout(() => {
-        body.appendChild(modal)
-    }, 500);
-    setTimeout(() => {
-        textContainer.innerText = 'Thanks, You are suscribed now !'; 
-        setTimeout(() => {
-            modal.remove(); 
-        }, 1000)  
-    }, 1500);
+//     let textContainer = document.createElement('div');
+//     textContainer.style.width = '50%';
+//     textContainer.style.height = '20%';
+//     textContainer.style.fontSize = '52px';
+//     textContainer.style.fontWeight = 'bold';
+//     textContainer.style.textAlign = 'center'
+//     textContainer.style.color = 'yellow';
+//     textContainer.innerText = 'Checking email validation';
+
+//     modal.appendChild(textContainer)
+//     setTimeout(() => {
+//         body.appendChild(modal)
+//     }, 500);
+//     setTimeout(() => {
+//         textContainer.innerText = 'Thanks, You are suscribed now !'; 
+//         setTimeout(() => {
+//             modal.remove(); 
+//         }, 1000)  
+//     }, 1500);
     
 
     
-});
+// });
+
+
+
+  
