@@ -42,12 +42,12 @@
           
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0" data-controller="kn" data-action="keyup@window->kn#follow"> <!--EVENTO EN LA VENTANA, QUE A TRAVÉS DEL MARCADOR KN HARÁ LA FUNCIÓN FOLLOW // con estos atributos desacoplamos el trabajo del diseñador del trabajo del programador DESACOPLADO DOM DE CODIGO-->
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#whoweare" style="color:aliceblue">Who we are</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#services" style="color:aliceblue ">OurServices</a>
+                      <a class="nav-link active" aria-current="page" href="#services" style="color:aliceblue">OurServices</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#portafolio" style="color:aliceblue">Portafolio</a>

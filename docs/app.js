@@ -1,5 +1,13 @@
 import "./Modulos/alertFecha.js";
-// import "./Modulos/menuWithKeys.js";
+import "./Modulos/menuWithKeys.js";
+
+//importamos un pequeño framework Stimulus
+import { Application } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"; //importamos el punto de arranque de la biblioteca Stimulus
+import { KeyNavController } from "./Modulos/keynav_controller.js";
+
+const app = Application.start() //iniciamos Stimulus
+app.register("kn", KeyNavController); //asociamos la marca kn al controller específico
+
 
 // const body = document.body;
 // const handleSubmit = document.getElementById('submitForm');
