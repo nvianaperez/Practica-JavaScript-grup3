@@ -26,8 +26,8 @@ function changeBorderColorWhenMouseOverAndAltKey () {
     console.log(divs);
     // recorrer esta variable añadiendo dos eventListeners: uno para mouseOver que añade el borde y otro mouseOut que lo quita
     //mejor añadiendo y quitando clases, que con style
-    for (let div of divs) {
-        div.addEventListener
-    }
+    // for (let div of divs) {
+    //     div.addEventListener
+    // }
 
 }
