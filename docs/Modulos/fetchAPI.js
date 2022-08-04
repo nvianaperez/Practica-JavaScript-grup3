@@ -27,8 +27,7 @@ class WeatherService extends Service {
     }
 
     getWeatherFor16Days () {
-        super.getData(`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${String(35)}&lon=${String(129)}&cnt=16&appid=${this.API_KEY}`)
-        
+        return super.getData(`https://api.openweathermap.org/data/2.5/forecast?lat=${String(35)}&lon=${String(129)}&cnt=16&appid=${this.API_KEY}`) 
     }   
 }
 
