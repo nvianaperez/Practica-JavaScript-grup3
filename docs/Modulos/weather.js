@@ -1,4 +1,5 @@
-import WeatherCard from "./weatherCard.js"
+import WeatherCard from "./weatherCard.js";
+
 async function Weather (service) {
     
     const data = await service.getWeatherFor16Days()
@@ -40,11 +41,10 @@ async function Weather (service) {
     carousel_next.addEventListener("click", (e) => {
          
         const result = rebanador(carousel_items.length + 1, carousel_items.length + 5)
-
         // console.log([...result])
         WeatherCard([...result])
     })
     
 }
 
-export default Weather;
+export {Weather};

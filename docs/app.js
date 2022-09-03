@@ -1,7 +1,7 @@
 import "./Modulos/alertFecha.js";
 import "./Modulos/menuWithKeys.js";
 import { WeatherService } from "./Modulos/fetchAPI.js";
-import Weather from "./Modulos/weather.js";
+import {Weather} from "./Modulos/weather.js";
 // import {rebanador} from "./Modulos/rebanador.js"
 
 //importamos un pequeño framework Stimulus
@@ -12,10 +12,11 @@ const app = Application.start() //iniciamos Stimulus
 
 app.register("kn", KeyNavController); //asociamos la marca kn al controller específico
 
-//weather
+//llamamos a la api del servicio del tiempo
 const weather = new WeatherService();
 
-(Weather(weather))()
+//pasamos el array de informacion del tiempo a la funcion Weather
+Weather(weather)
 
 // const carousel_items = document.getElementsByClassName("carousel-item")
 

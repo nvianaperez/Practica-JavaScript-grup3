@@ -2,7 +2,6 @@ function WeatherCard (array) {
     const carousel_inner = document.querySelector(".carousel-inner");
     
     array.forEach((element, index) => {
-        console.log("element", element)
         const card = document.createElement("div");
         card.className = "card text-bg-dark carousel-item"
         
