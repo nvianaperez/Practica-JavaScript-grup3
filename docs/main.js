@@ -1,17 +1,14 @@
 // import { menuWithKeys } from './menuWithKeys.js';
-// import { changePositions } from './changePosition.js';
+import { changePositions } from './changePosition.js';
 import { Application } from 'https://unpkg.com/@hotwired/stimulus/dist/stimulus.js';
 import { KeynavController } from '../docs/keynav_controller.js';
 const app = Application.start();
 app.register('kn', KeynavController);
 // const event = new KeynavController();
 function main() {
-  //   console.log('-hola-');
-  //   menuWithKeys();
-  //   setInterval(() => {
-  //     changePositions();
-  //   }, 2000);
-  // event.connect();
+  setInterval(() => {
+    changePositions();
+  }, 2000);
 }
 
 async function showPosition(position) {
@@ -21,8 +18,8 @@ async function showPosition(position) {
 function showError(error) {
   console.log('getCurrentPosition returned error', error);
 }
-const getCurrentWheather = async () => {
-  await navigator.geolocation.getCurrentPosition(async (position) => {
+const getCurrentWheather = () => {
+  navigator.geolocation.getCurrentPosition(async (position) => {
     const lat = position.coords.latitude;
     const long = position.coords.longitude;
 
