@@ -1,71 +1,24 @@
-import { menuWithKeys } from './menuWithKeys';
-import { changePositions } from './changePosition';
-// const body = document.body;
-// const handleSubmit = document.getElementById('submitForm');
+import "./Modulos/alertFecha.js";
+import "./Modulos/menuWithKeys.js";
+import { WeatherService } from "./Modulos/fetchAPI.js";
+import {Weather} from "./Modulos/weather.js";
+// import {rebanador} from "./Modulos/rebanador.js"
 
-// handleSubmit.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   let modal = document.createElement('div', 'succesSubscription');
-//   modal.style.width = '100vw';
-//   modal.style.height = '100vh';
-//   modal.style.backgroundColor = 'rgb(54 36 63 / 90%)';
-//   modal.style.zIndex = 2000;
-//   modal.style.position = 'absolute';
-//   modal.style.top = '353vh';
-//   modal.style.left = '0';
-//   modal.style.display = 'flex';
-//   modal.style.alignItems = 'center';
-//   modal.style.justifyContent = 'center';
+//importamos un pequeño framework Stimulus
+import { Application } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"; //importamos el punto de arranque de la biblioteca Stimulus
+import { KeyNavController } from "./Modulos/keynav_controller.js";
 
-//   let textContainer = document.createElement('div');
-//   textContainer.style.width = '50%';
-//   textContainer.style.height = '20%';
-//   textContainer.style.fontSize = '52px';
-//   textContainer.style.fontWeight = 'bold';
-//   textContainer.style.textAlign = 'center';
-//   textContainer.style.color = 'yellow';
-//   textContainer.innerText = 'Checking email validation';
+const app = Application.start() //iniciamos Stimulus
 
-//   modal.appendChild(textContainer);
-//   setTimeout(() => {
-//     body.appendChild(modal);
-//   }, 500);
-//   setTimeout(() => {
-//     textContainer.innerText = 'Thanks, You are suscribed now !';
-//     setTimeout(() => {
-//       modal.remove();
-//     }, 1000);
-//   }, 1500);
-// });
+app.register("kn", KeyNavController); //asociamos la marca kn al controller específico
 
-/**
- * AGUSTIN
- *
- */
-// const menuWithKeys = () => {
-//   const menu = document.getElementById('menu');
-//   const arrayOfSection = menu.getElementsByClassName('nav-link');
-//   Array.from(arrayOfSection).forEach((element, i) => {
-//     document.addEventListener('keyup', (event) => {
-//       if (Number(event.key - 1) === i) {
-//         element.click();
-//       }
-//     });
-//   });
-// };
+//llamamos a la api del servicio del tiempo
+const weather = new WeatherService();
 
-// const changePositions = () => {
-//   const arrayOfImgs = [...document.getElementsByClassName('imgs')];
-//   const randomNumber = Math.floor(Math.random() * 9);
-//   const randomNumber2 = Math.floor(Math.random() * 9);
-//   arrayOfImgs[randomNumber].after(arrayOfImgs[randomNumber2]);
-// };
-// menuWithKeys();
-// setInterval(() => {
-//   changePositions();
-// }, 2000);
+//pasamos el array de informacion del tiempo a la funcion Weather
+Weather(weather)
 
-menuWithKeys();
-setInterval(() => {
-  changePositions();
-}, 2000);
+// const carousel_items = document.getElementsByClassName("carousel-item")
+
+  
+

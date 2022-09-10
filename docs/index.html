@@ -13,8 +13,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- External CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,6 +27,9 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/dab4891a02.js" crossorigin="anonymous">
     </script> 
+    <!-- google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k"></script>
+
     <title>Práctica web grupo 3 </title>
 </head>
 <body class="container-fluid">
@@ -55,12 +59,14 @@
           
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-1 mb-lg-0" id="menu">
+
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0" data-controller="kn" data-action="keyup@window->kn#follow"> <!--EVENTO EN LA VENTANA, QUE A TRAVÉS DEL MARCADOR KN HARÁ LA FUNCIÓN FOLLOW // con estos atributos desacoplamos el trabajo del diseñador del trabajo del programador DESACOPLADO DOM DE CODIGO-->
+
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#whoweare" style="color:aliceblue">Who we are</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#services" style="color:aliceblue ">OurServices</a>
+                      <a class="nav-link active" aria-current="page" href="#services" style="color:aliceblue">OurServices</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#portafolio" style="color:aliceblue">Portafolio</a>
@@ -81,8 +87,66 @@
     </header>
  
 
+    
+      <!-- <div class="row-cols-12 px-3 py-2">
+        <div class="row">
+          <p class="h2">12 C</p>
+        </div>
+        <div class="row">
+          <p class="temperature-image"></p>
+          <p id="temperature-location">Cordoba, Argentina</p>
+        </div>
+      </div> -->
+      <button class="extend-weather">extend weather</button>
+      <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-bs-target="#carouselDark" data-bs-slide-to="0" ></li>
+          <li data-bs-target="#carouselDark" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselDark" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselDark" data-bs-slide-to="3"></li>
 
+        </ol>
+        <div class="carousel-inner">
 
+          <div class="card text-bg-dark carousel-item active">
+            <div class="card">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark carousel-item">
+            <div class="card">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark carousel-item">
+            <div class="card">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark carousel-item">
+            <div class="card">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+         
+        </div>
+        <a class="carousel-control-prev" href="#carouselDark" role="button"  data-bs-target="#carouselDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselDark" role="button" data-bs-target="#carouselDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
       <!-- Who we are -->
 
 
@@ -206,7 +270,9 @@
     </section>
     <!-- Location  -->
     <!-- no mover este script-->
-    <!-- <script>
+
+     <script>
+
       var map;
       function initMap(position) {
        map = new google.maps.Map(document.getElementById('map'), {
@@ -222,7 +288,7 @@
      navigator.geolocation.getCurrentPosition(position => {
      initMap(position)
      })
-    </script> -->
+    </script> 
 
     <section id="location" class="location-container container d-flex flex-column align-items-center  col-8 col-md-8 p-5 ">
       <div class="row me-md-5 ">
@@ -305,17 +371,9 @@
   </div>
 
 </footer>
-<!-- <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap">
-    </script> -->
-    <script type="module" src="./main.js"  ></script>
-    <!-- <script source="/docs/changePosition.js" type="module"></script>
-    <script source="/docs/menuWithKeys.js" type="module"></script> -->
-  <!-- script bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  <!-- script map -->
-  <!-- <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap">
-</script> -->
+
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>-->
+<script src="./app.js" type="module"></script>
+
   </body>
 </html>
