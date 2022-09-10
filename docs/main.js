@@ -1,5 +1,5 @@
 // import { menuWithKeys } from './menuWithKeys.js';
-import { changePositions } from './changePosition.js';
+import { changePositions } from './Modulos/changePositions.js';
 import { Application } from 'https://unpkg.com/@hotwired/stimulus/dist/stimulus.js';
 import { KeynavController } from '../docs/keynav_controller.js';
 const app = Application.start();
@@ -16,7 +16,7 @@ async function showPosition(position) {
   long = await position.coords.longitude;
 }
 function showError(error) {
-  console.log('getCurrentPosition returned error', error);
+  console.log('get CurrentPosition returned error', error);
 }
 const getCurrentWheather = () => {
   navigator.geolocation.getCurrentPosition(async (position) => {
@@ -36,7 +36,8 @@ const getCurrentWheather = () => {
       parraf.className = 'text-of-clima';
       parraf.innerHTML = ` The current wheather in ${value.name} is: ${value.weather[0].description}. The temperature is ${value.main.temp} C° <span style='font-size:15px;'>&#128560;</span>. Max: ${value.main.temp_max}C°  Min : ${value.main.temp_min}C° . The humidity is ${value.main.humidity} %.  `;
       wheatherSpan.appendChild(parraf);
-    });
+    })
+    .catch(error=> showError(error))
   });
 };
 
