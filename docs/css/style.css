@@ -33,19 +33,7 @@ p {
 .rotate:hover {
   transform: rotate(30deg);
 }
-/* .flex-container img:nth-child(5):hover {
-  border-radius: 100px;
-  animation-name: rota;
-  animation-duration: 4s;
-}
-@keyframes rota {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
 
 .flex-container img:nth-child(5) {
   animation-duration: 4s;
@@ -56,14 +44,7 @@ p {
   transform: rotate(360deg);
   animation-duration: 4s;
 }
-/* @keyframes rotaBack {
-  from {
-    transform: rotate();
-  }
-  to {
-    transform: rotate(0deg);
-  }
-} */
+
 
 .location-text {
   text-align: left;
@@ -75,6 +56,9 @@ p {
 }
 
 /*leon css*/
+#isCorrect {
+  background-color: #bdbcbc;
+}
 .location-container {
   box-sizing: border-box;
 }

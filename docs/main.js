@@ -23,7 +23,6 @@ const getCurrentWheather = () => {
     const lat = position.coords.latitude;
     const long = position.coords.longitude;
 
-    let wheather;
     const reponse = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=b6411eaff9ca5fbd2bbbe36b0555425b&units=metric`
     );
