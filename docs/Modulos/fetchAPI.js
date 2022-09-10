@@ -21,10 +21,14 @@ class WeatherService extends Service {
         return super.postData("https://countries.trevorblades.com/", body)
     }
 
-    getWeatherByCountry () {
-        const url = `http://api.openweathermap.org/data/2.5/forecast?id=${this.API_KEY}`
-
-    }
+    getCurrentWheather = (lat, long) => {
+       
+          return super.getData(
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=b6411eaff9ca5fbd2bbbe36b0555425b&units=metric`
+          );
+          
+       
+    };
 
     getWeatherFor16Days () {
         return super.getData(`https://api.openweathermap.org/data/2.5/forecast?lat=${String(35)}&lon=${String(129)}&cnt=16&appid=${this.API_KEY}`) 
