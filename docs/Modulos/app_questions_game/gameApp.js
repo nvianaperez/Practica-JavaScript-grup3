@@ -1,4 +1,13 @@
 import * as getCountries from './getCountry.js';
+import { polyfillCountryFlagEmojis } from 'https://cdn.skypack.dev/country-flag-emoji-polyfill';
+
+const showgame = () => window.location.hash === "#easteregg" ?  "flex" :  "none"
+
+window.addEventListener('load', (e) => {
+    document.getElementById("questions_game").style.display = showgame()
+})
+
+polyfillCountryFlagEmojis();
 
 const getcountries = getCountries.main;
 let countryR;
@@ -28,5 +37,5 @@ document.querySelector('#button2').addEventListener('click', (event) => {
     nextGame().then((data) => (countryR = data));
   }, 2500);
   return getCountries.selectOption(resp, countryR.name);
-  console.log(countryR);
 });
+

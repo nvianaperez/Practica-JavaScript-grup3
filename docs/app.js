@@ -1,7 +1,8 @@
 import "./Modulos/alertFecha.js";
 import "./Modulos/menuWithKeys.js";
+import { changePositions } from './Modulos/changePositions.js';
 import { WeatherService } from "./Modulos/fetchAPI.js";
-import {Weather} from "./Modulos/weather.js";
+import {Weather, WeatherFake} from "./Modulos/weather.js";
 // import {rebanador} from "./Modulos/rebanador.js"
 
 //importamos un pequeño framework Stimulus
@@ -12,13 +13,21 @@ const app = Application.start() //iniciamos Stimulus
 
 app.register("kn", KeyNavController); //asociamos la marca kn al controller específico
 
-//llamamos a la api del servicio del tiempo
+//creamos una instancia del servicio del tiempo 
 const weather = new WeatherService();
 
-//pasamos el array de informacion del tiempo a la funcion Weather
-Weather(weather)
+//pasamos la instancia del servicio del tiempo para llamar a la API y procesar los datos, 
+// Aqui utlizaremos dos formas distintas para mostrar dos cosas distintas
+Weather(weather) //#1
+WeatherFake(weather) //#2
 
-// const carousel_items = document.getElementsByClassName("carousel-item")
+// cambiamos la posiscion de las imagenes de manera aleatoria cada 2 segundos
+(function ChangeImagePositionsRandomlywithIntervals() {
+    setInterval(() => {
+      changePositions();
+    }, 2000);
+  })()
+
 
   
 
